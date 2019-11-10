@@ -1,0 +1,11 @@
+<div class="container">
+  <hr />
+  <div class="row btn btn-block border border-dark">
+    <div *ngFor="let item of menu[0][role]">
+      <a [routerLink]="[role, item.key]">
+        <hr />
+        <button class="btn btn-primary btn-block">{{ item.label }}</button>
+      </a>
+    </div>
+  </div>
+</div>
